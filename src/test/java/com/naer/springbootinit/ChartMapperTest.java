@@ -1,5 +1,6 @@
 package com.naer.springbootinit;
 
+import com.naer.springbootinit.mapper.ChartMapper;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import org.springframework.boot.test.context.SpringBootTest;

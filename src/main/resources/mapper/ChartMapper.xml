@@ -18,20 +18,19 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        id
-        ,goal,name,chartData,
+        id,goal,chartData,
         chartType,genChart,genResult,userId,
         createTime,updateTime,isDelete
     </sql>
-    <update id="createTable">
-        ${creatTableSQL}
-    </update>
-    <!--插入 value-->
-    <insert id="insertValue">
-        ${insertCVSData}
-    </insert>
-    <!--查询语句-->
-    <select id="queryChartData" resultType="java.util.Map">
-        select * from chart_${tableName}
-    </select>
+<!--    <update id="createTable">-->
+<!--        ${creatTableSQL}-->
+<!--    </update>-->
+<!--    &lt;!&ndash;插入 value&ndash;&gt;-->
+<!--    <insert id="insertValue">-->
+<!--        ${insertCVSData}-->
+<!--    </insert>-->
+<!--    &lt;!&ndash;查询语句&ndash;&gt;-->
+<!--    <select id="queryChartData" resultType="java.util.Map">-->
+<!--        select * from chart_${tableName}-->
+<!--    </select>-->
 </mapper>

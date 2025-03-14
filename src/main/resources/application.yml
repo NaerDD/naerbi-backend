@@ -20,7 +20,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/naerbi
     username: root
-    password: 123456
+    password: 1234
   # Redis 配置
   # todo 需替换配置，然后取消注释
   redis:
@@ -64,39 +64,31 @@ mybatis-plus:
       logic-delete-value: 1 # 逻辑已删除值（默认为 1）
       logic-not-delete-value: 0 # 逻辑未删除值（默认为 0）
 # 微信相关
-#wx:
-#  # 微信公众平台
-#  # todo 需替换配置
-#  mp:
-#    token: xxx
-#    aesKey: xxx
-#    appId: xxx
-#    secret: xxx
-#    config-storage:
-#      http-client-type: HttpClient
-#      key-prefix: wx
-#      redis:
-#        host: 127.0.0.1
-#        port: 6379
-#      type: Memory
+wx:
+  # 微信公众平台
+  # todo 需替换配置
+  mp:
+    token: xxx
+    aesKey: xxx
+    appId: xxx
+    secret: xxx
+    config-storage:
+      http-client-type: HttpClient
+      key-prefix: wx
+      redis:
+        host: 127.0.0.1
+        port: 6379
+      type: Memory
 
 # 对象存储
 # todo 需替换配置
-#cos:
-#  client:
-#    accessKey: xxx
-#    secretKey: xxx
-#    region: xxx
-#    bucket: xxx
+cos:
+  client:
+    accessKey: xxx
+    secretKey: xxx
+    region: xxx
+    bucket: xxx
 naer:
   client:
-    secret-key: ${secret-key}
-    access-key: ${access-key}
-#dsapi:
-#  client:
-#    api-key: ${api-key}
-#xunfei:
-#  client:
-#    appid: ${appid}
-#    apiSecret: ${apiSecret}
-#    apiKey: ${apiKey}
+    secret-key: vnso5grkwyfaczttzhb670qd0ro46hny
+    access-key: 94zqap84192euneqnf5woa39l8m3hjaq

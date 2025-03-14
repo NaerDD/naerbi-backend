@@ -48,6 +48,9 @@ public class UserController {
     @Resource
     private UserService userService;
 
+    @Resource
+    private WxOpenConfig wxOpenConfig;
+
     /**
      * 用户注册
      *
